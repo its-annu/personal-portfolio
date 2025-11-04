@@ -1,0 +1,376 @@
+/*  UNIVERSAL + BASE STYLES */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth; /* 🔥 Smooth scroll effect */
+}
+
+body {
+  background-color: peachpuff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Remove underlines from all links */
+a {
+  text-decoration: none;
+}
+
+/*  NAVIGATION BAR */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+  position: fixed;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+  top: 0;
+}
+
+.nav ul {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 5cm;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: #1d1d24;
+  position: relative;
+  padding: 5px 0;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #fd4766;
+}
+
+/* 🔥 Pink underline animation on hover */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* 🔹 Button Style (Resume, CV) */
+.btn {
+   margin-right: 144px;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+}
+
+.btn:hover {
+  background: transparent;
+  border-color: #fd4766;
+  color: #fd4766;
+}
+
+/* HERO / HOME SECTION*/
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: peachpuff;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 120px; /* to prevent overlap with fixed nav */
+}
+
+.content {
+  margin-left: 8%;
+}
+
+.content .title {
+  color: #0a0a0a;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content h1 {
+  color: #1f1f25;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 90px;
+  width: 70%;
+}
+
+.content h1 span {
+  color: #fd4766;
+}
+
+.content p {
+  font-size: 20px;
+  width: 55%;
+  color: #202020;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+/*image of developer girl*/
+img.pic{
+    border-radius: 25rem;
+    height: 30rem;
+    margin-right: 50px;
+}
+
+/*  ABOUT SECTION */
+#about {
+  background-color: papayawhip;
+  padding: 120px 50px;
+  min-height: 100vh;
+}
+
+.about-me {
+    display: ruby;
+    margin-left: 25rem;
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  color: #f42667;
+}
+
+.content1 {
+  background: #fffaf0;
+  border-radius: 50px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.intro {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content1 p {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: darkred;
+  line-height: 1.6;
+}
+
+.detail h1 {
+  color: #8f1a3f;
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.detail span {
+  color: #2a2727;
+  font-family: math;
+  margin-left: 10px;
+}
+
+/* SKILLS SECTION */
+#skills {
+  background-color: #ffdebf;
+  text-align: center;
+  padding: 100px 50px;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 90px;
+  color: #f42667;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.skills-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 150px;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  background-color:#fbecec6e;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 180px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.skills-list li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #fff4ef;
+}
+
+.skills-list img {
+  height: 150px;
+  width: 150px;
+}
+
+/*  PROJECT SECTION */
+#project {
+  background-color: papayawhip;
+  text-align: center;
+  padding: 100px 50px;
+  min-height: 100vh;
+}
+
+#project p {
+  font-size: 24px;
+  color: #5b0a1e;
+  margin-top: 20px;
+}
+#get-in-touch{
+    background-color: #ffdebf;
+    text-align: center;
+    padding: 100px 50px;
+    min-height: 100vh;
+}
+ h2{
+   font-size: 75px;
+    margin-top: -58px;
+    color: #ed4355;
+}
+
+input.name {
+    margin-top: -31px;
+    height: 31px;
+    width: 429px;
+    margin-bottom: 20px;
+}
+input.email{
+   margin-top: -7px;
+    height: 31px;
+    width: 429px;
+    margin-bottom: 20px;
+}
+input.msg{
+    height: 163px;
+    width: 428px;
+    margin-bottom: 20px;
+    text-align: unset;
+}
+footer{
+    background-color: #3c3737;
+    color:#fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+footer h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+footer p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.socials ul li{
+    margin: 10px 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+}
+footer .socials a img{
+    width: 25px;
+    margin:0px 8px;
+    transition: 0.3s;
+}
+/*scroll Reveal animation
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+section, .content, .pic,
+.content .title, .content h1, .content p, .content .btn{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-in-out;
+}
+
+/* Skill animation 
+.skills-list img{
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.6s ease-in-out;
+}
+
+.skills-list img.show{
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Active navbar link 
+nav ul li a.active{
+    color: #00bcd4;
+    border-bottom: 2px solid #00bcd4;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Animation
+.btn{
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    transform: scale(1.05);
+    background-color: #00bcd4;
+    color: white;
+}*/
